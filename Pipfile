@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+pytest = "==6.2.5"
+pytest-sugar = "==0.9.4"
+pytest-cov = "==3.0.0"
+mutmut = "mutmut==2.2.0"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+tests = "python -m pytest --cov=. tests/"
+mutmut = "python -m mutmut run --paths-to-mutate=application"

@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Executar testes unitarios",
+        "type": "shell",
+        "command": "~/.pyenv/shims/pipenv run tests",
+        "group": "build"
+      },
+      {
+        "label": "Executar mutmut",
+        "type": "shell",
+        "command": "~/.pyenv/shims/pipenv run mutmut",
+        "group": "build"
+      },
+    ]
+  }
