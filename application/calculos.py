@@ -34,6 +34,5 @@ class ImpressaoCalculos:
 
 if __name__ == '__main__':
     calculadora = Calculadora()
-    print(calculadora.calcular(5, 3, Calculadora.OP_MULTIPLICACAO))
-    # imp = ImpressaoCalculos(calculadora)
-    # imp.imprimir()
+    imp = ImpressaoCalculos(calculadora)
+    imp.imprimir()
